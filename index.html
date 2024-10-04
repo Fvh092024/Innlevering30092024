@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="no">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fartein si innlevering!</title>
+    <link rel="stylesheet" href="stylesheet.css" />
+  </head>
+  <body>
+    <h1>God dag, og velkommen til min innlevering!</h1>
+    <p class="P1">
+      Her inne finn du ikkje så mykje spennande enda :( Men fortvil ikkje! Eg
+      har ikkje lugge på latsida, la meg vise deg kva eg har lært!
+    </p>
+    <p class="Behold">BEHOLD! STEIN SAKS PAPIR:</p>
+   
+    <button
+      onclick="
+    const randomNumber = Math.random();
+
+    let computerMove = '';
+    if (randomNumber >= 0 && randomNumber < 1 / 3) {
+       computerMove = 'rock';
+    } else if (randomNumber >= 1 / 3 && randomNumber < 2 / 3) {
+     computerMove = 'paper';
+    } else if (randomNumber >= 2 / 3 && randomNumber < 1) {
+       computerMove = 'scissors';
+    }
+
+
+    if (computerMove === 'rock') {result = 'Tie.';}
+      else if (computerMove === 'scissors') {
+      result = 'You win.';}
+       else if (computerMove === 'paper') {result = 'You lose.'}
+
+    alert(`You picked rock. Computer picked ${computerMove}. ${result}`)
+    "
+    >
+      Rock
+    </button>
+    <button
+      onclick="
+      const randomNumber1 = Math.random();
+    if (randomNumber1 >= 0 && randomNumber1 < 1 / 3) {
+      computerMove = 'rock';
+    } else if (randomNumber1 >= 1 / 3 && randomNumber1 < 2 / 3) {
+      computerMove = 'paper';
+    } else if (randomNumber1 >= 2 / 3 && randomNumber1 < 1) {
+      computerMove = 'scissors';
+    }
+
+    if (computerMove === 'rock') {result = 'You win.';
+    } else if (computerMove === 'paper') {result = 'Tie.';} else if (computerMove = 'scissors') {result = 'You lose.'}
+
+    alert(`You picked paper. Computer picked ${computerMove}. ${result}`)
+    "
+    >
+      Paper
+    </button>
+    <button
+      onclick="
+    const randomNumber2 = Math.random();
+    if (randomNumber2 >= 0 && randomNumber2 < 1 / 3) {
+      computerMove = 'rock';
+    } else if (randomNumber2 >= 1 / 3 && randomNumber2 < 2 / 3) {
+      computerMove = 'paper';
+    } else if (randomNumber2 >= 2 / 3 && randomNumber2 < 1) {
+      computerMove = 'scissors';}
+      if (computerMove === 'rock') {result = 'You lose.';
+    } else if (computerMove === 'paper') 
+    {result = 'You win.';} 
+    else if (computerMove = 'scissors') {result = 'Tie.'}
+
+    alert(`You picked scissors. Computer picked ${computerMove}. ${result}`)
+    "
+    >
+      Scissors
+    </button>
+     <p class="P2"></p>
+      Her har eg nytta litt grunnleggjande matematikk og ein god del av JavaScripen eg har lært, til å kode eit stein saks papir spill. Den velgjer ut ein tilfeldig verdi mellom 0 og 1, utfallet kjem an på kvar det havnar i intervallar på 0.33. <br> Du får ein verdi, og den blir samanlikna opp imot datamaskinens tilfeldig utvalte verdi.
+    </p>
+    <div>
+        <button
+      onclick="
+      console.log(`Cart Quantity: ${cartQuantity}`);
+      "
+    >
+      Show Quantity
+    </button>
+    <button
+      onclick="
+    cartQuantity++;
+    console.log(`Cart Quantity: ${cartQuantity}`);
+    "
+    >
+      Add to Cart
+    </button>
+    <button
+      onclick="
+    cartQuantity += 2;
+    console.log(`Cart Quantity: ${cartQuantity}`);"
+    >
+      +2
+    </button>
+    <button
+      onclick="
+    cartQuantity += 3;
+    console.log(`Cart Quantity: ${cartQuantity}`);"
+    >
+      +3
+    </button>
+    <button
+      onclick="cartQuantity = 0;
+      console.log('Cart was reset.');
+    console.log(`Cart Quantity: ${cartQuantity}`);"
+    >
+      Reset Cart
+    </button>
+    <button
+      onclick="
+    cartQuantity += 4;
+    console.log(`Cart Quantity: ${cartQuantity}`);"
+    >
+      +4
+    </button>
+    <button
+      onclick="
+    cartQuantity += 5;
+    console.log(`Cart Quantity: ${cartQuantity}`);"
+    >
+      +5
+    </button>
+    <button
+      onclick="
+    cartQuantity --;
+    console.log(`Cart Quantity: ${cartQuantity}`);"
+    >
+      Remove from cart
+    </button>
+    <button
+      onclick="
+    cartQuantity -= 2;
+    console.log(`Cart Quantity: ${cartQuantity}`);"
+    >
+      -2
+    </button>
+    <button
+      onclick="
+    cartQuantity -= 3;
+    console.log(`Cart Quantity: ${cartQuantity}`);"
+    >
+      -3
+    </button>
+
+    <script>
+      let cartQuantity = 0;
+    </script>
+    <p>Desse knappane køyrer berre ein beskjed ut terminalen om kor mange du legg til av ei vare, og kva <br> totalt antall sagt vare no ligg på.<br>
+    Planen her var å herme etter Amazon sitt grensesnitt så godt som eg kunne, utan å kopiere<br> noko av koden. Så langt har eg ikkje komt.</p>
+    </div>
+    <div>
+        <p class="kalkis">Det neste eg vil vise, er ein kalkulator eg lagde i forrige veke. Den er så å sei ferdig, men clear <br> knappen fungerer framleis ikkje som den skal.</p>
+        <p></p>
+      <button
+        onclick="
+      calculation += '1';
+      console.log(`${calculation}`)"
+      >
+        1
+      </button>
+      <button
+        onclick="
+      calculation += '2';
+      console.log(`${calculation}`)"
+      >
+        2
+      </button>
+      <button
+        onclick="
+      calculation += '3';
+      console.log(`${calculation}`)"
+      >
+        3
+      </button>
+      <button
+        onclick="
+      calculation += ' + ';
+      console.log(`${calculation}`)"
+      >
+        +
+      </button>
+    </p>
+
+    <p>
+      <button
+        onclick="
+      calculation += '4';
+      console.log(`${calculation}`)"
+      >
+        4
+      </button>
+      <button
+        onclick="
+      calculation += '5';
+      console.log(`${calculation}`)"
+      >
+        5
+      </button>
+      <button
+        onclick="
+      calculation += '6';
+      console.log(`${calculation}`)"
+      >
+        6
+      </button>
+      <button>-</button>
+    </p>
+    <p>
+      <button
+        onclick="
+      calculation += '7';
+      console.log(`${calculation}`)"
+      >
+        7
+      </button>
+      <button
+        onclick="
+      calculation += '8';
+      console.log(`${calculation}`)"
+      >
+        8
+      </button>
+      <button
+        onclick="
+      calculation += '9';
+      console.log(`${calculation}`)"
+      >
+        9
+      </button>
+      <button
+        onclick="
+      calculation += ' * ';
+      console.log(`${calculation}`)"
+      >
+        *
+      </button>
+    </p>
+    <p>
+      <button
+        onclick="
+      calculation += '0';
+      console.log(`${calculation}`)"
+      >
+        0
+      </button>
+      <button
+        onclick="
+      calculation += '.';
+      console.log(`${calculation}`)"
+      >
+        .
+      </button>
+      <button
+        onclick="
+    eval(calculation);
+    calculation = eval(calculation);
+    console.log(calculation);"
+        ;
+      >
+        =
+      </button>
+      <button
+        onclick="
+      calculation += ' / ';
+      console.log(`${calculation}`)"
+      >
+        /
+      </button>
+    </p>
+    <button>Clear</button>
+    <script>
+      let calculation = "";
+      const clearValue = 0;
+    </script>
+    <p class="P3">Eg har ikkje funne ut korleis eg lager eit displayvindu til kalkulatoren. Verdiar blir derfor utskrevne i terminalen.<br>Work in progress!</p>
+    </div>
+    <p class="avslutning">Lot du deg ikkje imponere, har du i det minste eit fint bakgrunnsbilete du kan kikke litt på. Om heller ikkje <br> DET overbeviser deg - så skal du få eit bilete av ein schäferkvalp.</p>
+    <img class="doggo" src="schäferkvalp.jpeg" alt="ein liten schäferkvalp som overbeviser deg om å gje meg ein bråte poeng">
+  </body>
+</html>

@@ -1,0 +1,39 @@
+@font-face {
+  font-family: middleEarth;
+  src: url(Middleearth-ao6m.ttf);
+}
+
+h1 {
+  font-size: 27px;
+}
+.P1 {
+  font-size: 15px;
+  font-family: "Times New Roman", Times, serif;
+}
+.Behold {
+  font-size: 20px;
+  font-family: middleEarth;
+  color: black;
+  width: 368px;
+  background-image: url(hellfire.jpg);
+}
+body {
+  background-image: url(slettemedsnømedium.jpg);
+  background-repeat: no-repeat;
+  width: 1900px;
+  height: 1040px;
+  border: none;
+}
+.P3 {
+  color: rgb(25, 0, 248);
+}
+
+.avslutning {
+  background-color: black;
+  color: white;
+  width: 690px;
+}
+.doggo {
+  width: 270px;
+  height: 300px;
+}
